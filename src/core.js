@@ -14,3 +14,9 @@ export function next(state){
     entries: entries.skip(2)
   });
 }
+
+export function vote(state, movie_title) {
+  return state.updateIn(
+    ['vote', 'tally', movie_title], 0, tally => tally + 1
+  );
+}
