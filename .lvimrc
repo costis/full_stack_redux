@@ -1,0 +1,1 @@
+nnoremap <localleader>x :!npm test<CR>
