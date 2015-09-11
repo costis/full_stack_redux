@@ -1,1 +1,6 @@
-nnoremap <localleader>x :!npm test<CR>
+nnoremap <leader>x :!npm test<CR>
+
+
+" extra paths for using with 'gf
+set path+=**/src/main/**,**
+set suffixesadd+=.js
