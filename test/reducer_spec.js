@@ -35,7 +35,6 @@ describe('reducer', () => {
       vote: {
         pair: ['Trainspotting', '28 Days Later']
       },
-      entries: []
     });
     const action = {type: 'VOTE', entry: 'Trainspotting'};
     const nextState = reducer(initialState, action);
@@ -44,8 +43,7 @@ describe('reducer', () => {
       vote: {
         pair: ['Trainspotting', '28 Days Later'],
         tally: {Trainspotting: 1}
-      },
-      entries: []
+      }
     }));
   });
 
@@ -66,7 +64,7 @@ describe('reducer', () => {
       {type: 'VOTE', entry: 'Trainspotter'},
       {type: 'VOTE', entry: 'Sunshine'},
       {type: 'NEXT'}
-    ]
+    ];
 
     const finalState = actions.reduce(reducer, Map());
 

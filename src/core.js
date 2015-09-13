@@ -34,8 +34,8 @@ export function next(state){
   }
 }
 
-export function vote(state, movie_title) {
-  return state.updateIn(
-    ['vote', 'tally', movie_title], 0, tally => tally + 1
+export function vote(voteState, movie_title) {
+  return voteState.updateIn(
+    ['tally', movie_title], 0, tally => tally + 1
   );
 }
