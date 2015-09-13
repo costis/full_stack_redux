@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {Map, fromJS} from 'immutable';
 
-import {reducer} from '../src/reducer';
+import reducer from '../src/reducer';
 
 describe('reducer', () => {
   it('handles SET_ENTRIES', () => {

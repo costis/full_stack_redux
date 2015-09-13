@@ -1,0 +1,1 @@
+import {makeStore} from './src/store'

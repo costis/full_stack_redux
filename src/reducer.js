@@ -1,6 +1,6 @@
 import {setEntries, next, vote, INITIAL_STATE} from './core';
 
-export function reducer(state, action) {
+export default function(state, action) {
   if (typeof state == 'undefined'){
     state = INITIAL_STATE
   }
