@@ -70,7 +70,7 @@ describe('application logic', () => {
           pair: List.of('Sunshine', 'Millions')
         }),
         entries: List.of('127 Hours', 'Trainspotting')
-      }))
+      }));
     });
 
     it('takes the next two entries under vote', () => {
@@ -92,7 +92,7 @@ describe('application logic', () => {
     it('puts winner of current vote back to entries', () => {
     
     });
-  })
+  });
 
  describe('vote', () => {
    it('creates a tally for the voted entry', () => {
@@ -106,7 +106,7 @@ describe('application logic', () => {
        tally: Map({
          'Trainspotting': 1
        })
-     }))
+     }));
    });
   
    it('adds to existing tally for the voted entry', () => {

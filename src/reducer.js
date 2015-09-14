@@ -2,7 +2,7 @@ import {setEntries, next, vote, INITIAL_STATE} from './core';
 
 export default function(state, action) {
   if (typeof state == 'undefined'){
-    state = INITIAL_STATE
+    state = INITIAL_STATE;
   }
 
   switch(action.type) {
